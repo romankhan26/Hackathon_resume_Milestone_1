@@ -1,0 +1,156 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 36px;
+  color: #007acc;
+  margin-bottom: 5px;
+}
+body.dark-mode header p {
+  color: #fff;
+}
+header p {
+  color: #555;
+  font-size: 16px;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #007acc;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50px;
+  height: 3px;
+  background-color: #ff6b6b;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007acc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+.hidden {
+  display: none;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .resume-container {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode button {
+  background-color: #ff6b6b;
+}
+
+body.dark-mode button:hover {
+  background-color: #e63946;
+}
+ 
+.toggle-btn {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #005f99;
+}
+
+.download {
+  text-decoration: none;
+  color:#fff;
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  header h1 {
+      font-size: 28px;
+  }
+
+  section h2 {
+      font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  header p, section p {
+      font-size: 14px;
+  }
+
+  button {
+      width: 100%;
+      margin: 10px 0;
+  }
+}
+

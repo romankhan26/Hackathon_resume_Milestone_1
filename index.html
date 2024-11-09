@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume with Toggles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>Roman Khan</h1>
+            <p>Email: 123mail@example.com | Phone: +123 456 7890</p>
+            <p>Address: Karachi, Pakistan</p>
+        </header>
+
+        <section class="profile">
+            <h2>Profile</h2>
+            <p>An ambitious and driven web developer with a passion for creating efficient and scalable web applications. Highly skilled in HTML, CSS, JavaScript, and TypeScript, with experience in React and modern web development frameworks.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills <button class="toggle-btn" id="skillsToggle">Show Skills</button></h2>
+            <ul id="skillsList" class="hidden">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Experience <button class="toggle-btn" id="experienceToggle">Show Experience</button></h2>
+            <div id="experienceList" class="hidden">
+                <div class="job">
+                    <h3>Front-End Developer - ABC Tech</h3>
+                    <p>Jan 2022 - Present</p>
+                    <p>Contributed to the development of a complex web application using React, Redux, and TypeScript. Implemented responsive designs, optimized code for performance, and collaborated with backend developers to ensure smooth API integration.</p>
+                </div>
+                <div class="job">
+                    <h3>Web Developer - XYZ Solutions</h3>
+                    <p>Jun 2020 - Dec 2021</p>
+                    <p>Developed and maintained websites for small businesses using modern web technologies such as HTML5, CSS3, JavaScript, and WordPress. Ensured all websites were optimized for mobile and SEO-friendly.</p>
+                </div>
+                <div class="job">
+                    <h3>Junior Developer - Dev Corp</h3>
+                    <p>Jan 2019 - May 2020</p>
+                    <p>Assisted in the development of internal tools and dashboards using JavaScript and PHP. Gained experience working with version control systems (Git) and collaborating with senior developers to improve code quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Science - University of Tech</p>
+            <p>Graduation Year: 2019</p>
+        </section>
+
+        <footer>
+            <p>Find me on LinkedIn: <a href="https://pk.linkedin.com/in/roman-ayub-khan-025877316" target="_blank">My LinkedIn</a></p>
+        </footer>
+    </div>
+
+    <div class="buttons">
+        <button id="themeToggle">Toggle Theme</button>
+        <button id="downloadResume"><a class="download" target="_blank" href="./Assets/Resume_Roman_ayub.pdf" download>Download Resume</a></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
